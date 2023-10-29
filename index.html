@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-image: url(R.jpg);
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 300px;
+            margin: 10vh auto 0 auto;
+            box-shadow: 0px 0px 43px 17px rgb(8, 8, 8);
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(201, 216, 230);
+        }
+
+        #display {
+            height: 60px;
+            line-height: 60px;
+            background-color: #f8fbf9;
+            font-size: 30px;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            text-align: right;
+            overflow: hidden;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .button {
+            border: 1px solid #999;
+            line-height: 90px;
+            text-align: center;
+            font-size: 25px;
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        #equal {
+            background-color: #0be0f7;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0be0f7;
+            color: rgb(11, 5, 5);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="display"></div>
+            <div class="buttons">
+                <div class="button">C</div>
+                <div class="button">÷</div>
+                <div class="button">*</div>
+                <div class="button">&larr;</div>
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button">-</div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button">+</div>
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">.</div>
+                <div class="button"></div>
+                <div class="button">0</div>
+                <div class="button"></div>
+                <div id="equal" class="button">=</div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
